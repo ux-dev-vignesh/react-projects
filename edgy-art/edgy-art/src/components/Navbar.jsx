@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return (
         <nav className={`w-full top-0 z-50 transition-all duration-300 ease-in-out ${scrolled ? "fixed bg-white shadow-md text-black" : "absolute bg-transparent text-stone-100"}`}>
-            <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div className="max-w-8xl mx-auto px-4 py-4 flex justify-between items-center">
                 <Link to="/" className="text-2xl font-bold">EDGY <span className="text-lime-600">ART</span></Link>
 
                 {/* Desktop Menu */}
