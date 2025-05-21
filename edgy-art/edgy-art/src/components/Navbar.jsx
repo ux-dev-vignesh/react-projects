@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        // Handle scroll event
+        // Handle scroll event        
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
         };
@@ -32,7 +32,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`w-full top-0 z-50 transition-all duration-300 ease-in-out ${scrolled ? "fixed bg-white shadow-md text-black" : "absolute bg-transparent text-stone-100"}`}>
+        <nav className={`w-full top-0 z-50 transition-all duration-300 ease-in-out ${scrolled ? "fixed bg-white shadow-md text-black" : "absolute bg-black text-stone-100"}  h-[70px]`}>
             <div className="max-w-8xl mx-auto px-4 py-4 flex justify-between items-center">
                 <Link to="/" className="text-2xl font-bold">EDGY <span className="text-lime-600">ART</span></Link>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div className={`md:hidden ${isOpen ? "block" : "hidden"} bg-white text-black py-4 transition-all duration-300 ease-in-out transform ${isOpen ? "translate-y-0" : "-translate-y-10"}`}>
-                <ul className="space-y-4 text-center">
+                <ul className="space-y-1">
                     {menus.map((item) => (
                         <li key={item.id}>
                             <Link to={item.link} className="block py-2 px-4 transition-colors duration-300">{item.label}</Link>

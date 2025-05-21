@@ -7,9 +7,12 @@ const MainLayout = ({ children }) => {
     return (
         <>
             <div className="flex flex-col min-h-screen">
-                <CustomCursor/>
+                <div className="hidden md:block">
+                    <CustomCursor />
+                </div>
+
                 <Header />
-                <main className="flex-grow">
+                <main className="flex-grow pt-[70px]">
                     {children}
                 </main>
                 <Footer />

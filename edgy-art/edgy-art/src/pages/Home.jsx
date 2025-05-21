@@ -13,16 +13,16 @@ const Home = () => {
                 }}
             >
                 <div className="container mx-auto px-4 py-20">
-                    <h2 className="text-5xl font-bold">Hi i am vignesh</h2>
+                    <h2 className="text-5xl font-bold text-center">Hi i am vignesh Frontend Developer</h2>
                 </div>
             </section>
             <section className="bg-stone-950">
                 <div className="container mx-auto px-4 py-20">
                     <h3 className="text-center text-4xl mb-10">Our Services</h3>
-                    <div className="flex gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         <div className="card bg-gray-800 py-8 px-4 text-center cursor-pointer">
                             <i></i>
-                            <h4 className="text-center text-2xl">
+                            <h4 className="text-center  text-2xl">
                                 Development</h4>
                             <p>Nam varius mauris eget sodales tempus. Quisque sollicitudin consectetur accumsan. Ut imperdiet mi velit, ut congue justo sagittis eget</p>
                         </div>
@@ -61,7 +61,11 @@ const Home = () => {
                     <h3 className="text-center text-4xl mb-10">My Portfolio</h3>
                 </div>
             </section>
-
+            <section className="bg-stone-950">
+                <div className="container mx-auto px-4 py-20">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quam repellendus minus iusto id consequatur debitis suscipit nihil placeat cumque facilis officia ipsum labore quis possimus tempora neque accusantium eos.</p>
+                </div>
+            </section>
         </>
     )
 }
